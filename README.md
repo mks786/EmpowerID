@@ -1,10 +1,6 @@
 ## Welcome To EmpowerID
 This project is an experimental application I use to combine several cutting-edge technologies and architectural patterns. Thanks for getting here! please give a ⭐ if you liked the project. It motivates me to keep improving it.
 
-<a href="images/Architecture.png" target="_blank">
-<img src="images/Architecture.png" width="900px"/>
-</a>
-
 <a href="images/Architecture.jpg" target="_blank">
 <img src="images/Architecture.jpg" width="900px"/>
 </a>
