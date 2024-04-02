@@ -1,0 +1,51 @@
+# Ignore Visual Studio files
+.vs/
+*.vscode/
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.dbmdl
+*.log
+*.iobj
+*.ipch/
+*.obj/
+*.pch/
+*.cache/
+*.dll
+*.exe
+*.opendb
+*.ncb
+*.sdf
+*.db
+
+# Ignore build output
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+Repository.ps*
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2019 specific files
+.vscode/
+*.sln.ide/

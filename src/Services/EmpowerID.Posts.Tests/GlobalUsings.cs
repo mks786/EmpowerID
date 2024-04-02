@@ -1,0 +1,11 @@
+global using EmpowerID.Core.CQRS.CommandHandling;
+global using EmpowerID.Core.CQRS.QueryHandling;
+global using EmpowerID.Core.Exceptions;
+global using EmpowerID.Core.Infrastructure.WebApi;
+global using EmpowerID.Posts.API.Controllers;
+global using EmpowerID.Posts.API.Controllers.Requests;
+global using EmpowerID.Posts.Domain;
+global using FluentAssertions;
+global using Microsoft.AspNetCore.Mvc;
+global using NSubstitute;
+global using Xunit;
