@@ -1,5 +1,5 @@
 ## Welcome To EmpowerID
-This project is an experimental application I use to combine several cutting-edge technologies and architectural patterns. Thanks for getting here! please give a ⭐ if you liked the project. It motivates me to keep improving it.
+Welcome to EmpowerID, an experimental application that integrates several cutting-edge technologies and architectural patterns. Your interest in this project is appreciated! If you find value in it, please consider giving it a ⭐ to show your support, which in turn motivates continuous improvement.
 
 <a href="images/Architecture.jpg" target="_blank">
 <img src="images/Architecture.jpg" width="900px"/>
@@ -25,17 +25,16 @@ src
 └── docker-compose
 ```
 - **Core** <br/>
-It defines the building blocks and abstractions used on all underlying projects. Its nature is very abstract, with no implementations.
+Defines abstract building blocks utilized across all projects.
  
 - **Core.Infrastructure** <br/>
-It holds some abstractions and implementation for infrastructure to be used by all microservices and underlying dependencies.
+Contains abstractions and infrastructure implementations for use by microservices and their dependencies.
  
-- **Crosscutting** <br/>
-It contains project implementations that cross-cut all microservices, such as `IdentityServer` and `API gateway`.
+- **Identity § Gateway** <br/>
+Encompasses project implementations that intersect multiple microservices, such as  `IdentityServer` and  `API Gateway `.
  
 - **Services** <br/>
-The microservices composing the backend are built to be as simple as possible, structured as a vertically sliced structure with  `API`, `Application`, `Domain,` and `Infrastructure.`
- 
+Backend microservices are structured in a vertically sliced manner with `API`, `Application`, `Domain`, and `Infrastructure` layers.
     ```
       ├── EmpowerID.Posts
       │   ├── API
@@ -45,16 +44,16 @@ The microservices composing the backend are built to be as simple as possible, s
     ```
  
   - **API** <br/>
-  RESTful API for enabling communication between client and server.
+  Provides a RESTful interface for communication between client and server.
  
   - **Application** <br/> 
-  It orchestrates the interactions between the external world and the domain to perform application tasks through use cases by `handling commands and queries`.
+  Orchestrates interactions between the external world and the domain, executing application tasks through use cases by managing commands and queries.
  
   - **Domain** <br/>
-  A structured implementation of the domain through aggregates, commands, value objects, domain services, repository definitions, and domain events.
+  Implements domain logic through aggregates, commands, value objects, domain services, repository definitions, and domain events.
  
   - **Infrastructure** <br/>
-  It is a supporting library for upper layers, handling infrastructural matters such as data persistence with *implementing repositories*, database mapping, and external integrations.
+  A supporting library for upper layers, handling infrastructural concerns such as data persistence via repository implementations, database mapping, and external integrations.
  
 <br/>
  
@@ -84,12 +83,15 @@ The microservices composing the backend are built to be as simple as possible, s
  
 <br/>
  
-## What do you need to run it
+## Running Instructions
  
-#### Running the microservices using Docker
- 
-The project was designed to be easily run within docker containers, hence all you need is 1 command line to up everything. Make sure you have `Docker` installed and have fun!
- 
+Running Microservices with Docker
+The project is designed to be easily run within Docker containers. Simply follow these steps:
+
+<ol>
+ <li>Ensure you have Docker installed on your system.</li>
+ <li>Using a terminal, execute the following command:</li>
+</ol>
  
 - Download Docker: <a href="https://docs.docker.com/docker-for-windows/wsl/" target="_blank">Docker Desktop with support for WLS 2</a>
 <br/>
@@ -99,8 +101,7 @@ Using a terminal, run:
 ```console
 $ docker-compose up
 ```
- 
-You can also set the `docker-compose.dcproj` as a Startup project on Visual Studio if you want to run it while debugging.
+ Alternatively, you can set the `docker-compose.dcproj` as the Startup project in Visual Studio if you prefer to run it while debugging.
  <br/>
 <a href="images/Test.png" target="_blank">
 <img src="images/Test.png" width="600px"/>
