@@ -85,18 +85,14 @@ Backend microservices are structured in a vertically sliced manner with `API`, `
  
 ## Running Instructions
  
-Running Microservices with Docker
+Running Microservices with Docker<br/>
 The project is designed to be easily run within Docker containers. Simply follow these steps:
 
 <ol>
  <li>Ensure you have Docker installed on your system.</li>
  <li>Using a terminal, execute the following command:</li>
 </ol>
- 
-- Download Docker: <a href="https://docs.docker.com/docker-for-windows/wsl/" target="_blank">Docker Desktop with support for WLS 2</a>
 <br/>
- 
-Using a terminal, run:
  
 ```console
 $ docker-compose up
